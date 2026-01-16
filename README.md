@@ -1,5 +1,6 @@
 # News.ai 🗞️🤖
 # Stay tuned more updates coming soon.
+
 **News.ai** is an AI-powered news aggregator that fetches real-time headlines using **NewsAPI**, summarizes articles with **NLP**, saves your reading history in **SQLite**, can read summaries aloud with **gTTS**, and supports a **daily email digest** (SMTP).
 
 > Built with **Python + Streamlit + NewsAPI + SQLite + gTTS + SMTP Email**.
@@ -23,6 +24,8 @@
 - **Text-to-Speech (TTS)** with **gTTS**
 - **Email digest** (daily headlines via **SMTP**)
 - Optional: basic recommendations / personalization module (if enabled)
+
+## More features to add for audio streaming as well.
 
 ---
 
