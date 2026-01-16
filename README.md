@@ -1,34 +1,48 @@
-# 📰 AI News Summarizer
+# News.ai 🗞️🤖
+# Stay tuned more updates coming soon.
+**News.ai** is an AI-powered news aggregator that fetches real-time headlines using **NewsAPI**, summarizes articles with **NLP**, saves your reading history in **SQLite**, can read summaries aloud with **gTTS**, and supports a **daily email digest** (SMTP).
 
-# more updates coming soon *****
+> Built with **Python + Streamlit + NewsAPI + SQLite + gTTS + SMTP Email**.
 
-An AI-powered news aggregator that fetches the latest headlines, summarizes them into short and easy-to-read snippets, saves your reading history, and even reads news aloud with **Text-to-Speech (TTS)** or sends you a **daily email digest**.
+---
 
-Built with 
-**Python**, 
-**Streamlit**, and 
-**NLP**.
+## ✨ What Employers Will Like
+- Clean separation of concerns (API layer, NLP layer, DB layer, UI layer)
+- Real-world integrations (NewsAPI + SMTP)
+- Persistent storage (SQLite)
+- User-facing product (Streamlit UI)
+- Extensible architecture (easy to swap summarizer or add personalization)
 
 ---
 
 ## 🚀 Features
-
-- 🔎 Fetch real-time news from **NewsAPI**
-- ✨ Summarize articles using **NLP**
-- 📜 Save & view reading history in SQLite
-- 🔊 Listen to summaries via **Text-to-Speech (gTTS)**
-- 📧 Get a daily email digest of top headlines
-- 🌐 Clean UI built with **Streamlit**
+- **Real-time news fetching** via **NewsAPI**
+- **AI/NLP summarization** for quick reading
+- **Streamlit UI** for interactive browsing
+- **Reading history + saved items** stored in **SQLite**
+- **Text-to-Speech (TTS)** with **gTTS**
+- **Email digest** (daily headlines via **SMTP**)
+- Optional: basic recommendations / personalization module (if enabled)
 
 ---
 
-More to come .......
-🎯 Future Improvements
-🌙 Dark mode UI
-📱 Mobile-friendly interface
-🧠 Advanced summarizer (transformers like BART or T5)
-🔔 Push notifications
+## 🧰 Tech Stack
+- **Language:** Python  
+- **UI:** Streamlit  
+- **News Source:** NewsAPI  
+- **Database:** SQLite  
+- **Summarization:** NLP summarizer module (upgradeable to transformer models)  
+- **Text-to-Speech:** gTTS  
+- **Email Digest:** SMTP (Gmail/Outlook compatible with app passwords)
 
-```
+---
 
-```
+## 🧠 System Overview
+```mermaid
+flowchart LR
+  UI[Streamlit UI] --> API[NewsAPI Fetcher]
+  API --> NLP[NLP Summarizer]
+  NLP --> UI
+  UI --> DB[(SQLite History)]
+  NLP --> TTS[gTTS Audio]
+  NLP --> MAIL[SMTP Email Digest]
