@@ -5,7 +5,7 @@ from utils import get_secret
 
 load_dotenv()
 API_KEY = get_secret("NEWSAPI_KEY")
-BASE = "https://newsapi.org/v2"
+BASE = secret
 
 
 
