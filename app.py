@@ -3,7 +3,7 @@
 import streamlit as st
 from news_api import fetch_news
 from nlp import summarize_text
-from db import log_article, get_history# ...existing code...
+from db import log_article, get_history # ...existing code...
 import streamlit as st
 from news_api import fetch_news
 from nlp import summarize_text
@@ -42,11 +42,8 @@ if st.button("Fetch News"):
             if url:
                 st.markdown(f"[Read Full Article]({url})")
             log_article(title, category)
-# ...existing# ...existing code...
-import streamlit as st
-from news_api import fetch_news
-from nlp import summarize_text
-from db import log_article, get_history
+
+## Some duplicate code here to fix
 
 st.set_page_config(page_title="AI News Summarizer", layout="wide")
 
